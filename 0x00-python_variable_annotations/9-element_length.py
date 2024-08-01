@@ -6,19 +6,22 @@ and their corresponding lengths.
 """
 
 
-from typing import List, Tuple
+from typing import Iterable, Sequence, List, Tuple
 
 
-def element_length(lst: List[str]) -> List[Tuple[str, int]]:
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+
     """
-    Returns a list of tuples where each tuple contains a    string from the
-    inputlist and the length of that string.
+    Returns a list of tuples where each tuple contains
+    sequence from the
+    input list and the length of that sequence.
 
     Args:
-      lst (List[str]): A list of strings.
+    lst (Iterable[Sequence]): An iterable of sequences (e.g., strings, lists)
 
     Returns:
-      List[Tuple[str, int]]: A list of tuples where each    tuple contains a
-      stringand its length.
+    List[Tuple[Sequence, int]]: A list of tuples where each tuple contains a
+    sequence and its length.
     """
+
     return [(i, len(i)) for i in lst]
