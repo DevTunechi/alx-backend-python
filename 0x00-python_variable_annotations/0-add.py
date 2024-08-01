@@ -3,16 +3,17 @@
 This module provides a simple function to add two float numbers.
 """
 
+
 def add(a: float, b: float) -> float:
-  """
-  Adds two floats and returns the result.
+    """
+    Adds two floats and returns the result.
 
-  Args:
-    a (float): The first number.
-    b (float): The second number.
+    Args:
+      a (float): The first number.
+      b (float): The second number.
 
-  Returns:
-    float: The sum of a and b.
-  """
+    Returns:
+      float: The sum of a and b.
+    """
 
-  return a + b
+    return a + b
